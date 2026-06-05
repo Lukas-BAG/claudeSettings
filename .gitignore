@@ -1,0 +1,2 @@
+# Local overrides with machine-specific paths — never commit these
+.claude/settings.local.json

@@ -1,7 +1,36 @@
 {
-	"permissions": {
-		"allow": [],
-		"deny": [],
-		"ask": ["Read"]
-	}
+  "permissions": {
+    "allow": [
+      "Bash(ls)",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git branch *)",
+      "Bash(git show *)"
+    ],
+    "deny": [
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(nc *)",
+      "Bash(netcat *)",
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(rsync *)"
+    ],
+    "ask": [
+      "Read",
+      "Edit",
+      "Write",
+      "Bash",
+      "Grep",
+      "WebFetch",
+      "WebSearch"
+    ]
+  },
+  "autoMemoryEnabled": false,
+  "cleanupPeriodDays": 14,
+  "defaultShell": "bash",
+  "respectGitignore": true
 }
